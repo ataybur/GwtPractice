@@ -1,0 +1,5 @@
+# Module org.gwtproject.tutorial.TodoListJUnit.JUnit
+# RPC service class, partial path of RPC policy file
+org.gwtproject.tutorial.client.GreetingService, 5F75B59F2BA06231B131EC6AA10FE87E.gwt.rpc
+com.google.gwt.logging.shared.RemoteLoggingService, 8C60C75F6B7DEA6E5ED4AE57614680B1.gwt.rpc
+com.google.gwt.junit.client.impl.JUnitHost, 96393FD5B90EFD77EACE5B4F721C3D47.gwt.rpc
