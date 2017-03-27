@@ -1,0 +1,2 @@
+serviceClass: org.gwtproject.tutorial.client.AppService
+path: 935853F97E8D036684BBCFC78BDD4D02.gwt.rpc

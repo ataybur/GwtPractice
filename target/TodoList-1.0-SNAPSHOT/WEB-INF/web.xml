@@ -6,17 +6,58 @@
          xmlns="http://java.sun.com/xml/ns/javaee">
 
   <!-- Servlets -->
-  <servlet>
-    <servlet-name>greetServlet</servlet-name>
-    <servlet-class>org.gwtproject.tutorial.server.GreetingServiceImpl</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-    <servlet-name>greetServlet</servlet-name>
-    <url-pattern>/todolist/greet</url-pattern>
-  </servlet-mapping>
-  
+<!--   <servlet> -->
+<!--     <servlet-name>greetServlet</servlet-name> -->
+<!--     <servlet-class>org.gwtproject.tutorial.server.GreetingServiceImpl</servlet-class> -->
+<!--   </servlet> -->
+    
+<!--   <servlet-mapping> -->
+<!--     <servlet-name>greetServlet</servlet-name> -->
+<!--     <url-pattern>/todolist/greet</url-pattern> -->
+<!--   </servlet-mapping> -->
   <!-- Default page to serve -->
+  
+<!--   <servlet> -->
+<!--     <servlet-name>fileUploaderServlet</servlet-name> -->
+<!--     <servlet-class>org.gwtproject.tutorial.server.utils.FileUpload</servlet-class> -->
+<!-- 	</servlet> -->
+
+<!-- <servlet-mapping> -->
+<!--   <servlet-name>fileUploaderServlet</servlet-name> -->
+<!--   <url-pattern>/todolist/fileupload</url-pattern> -->
+<!-- </servlet-mapping> -->
+
+  <servlet>
+    <servlet-name>fileUploaderServlet</servlet-name>
+    <servlet-class>gwtupload.server.UploadServlet</servlet-class>
+	</servlet>
+
+<servlet-mapping>
+  <servlet-name>fileUploaderServlet</servlet-name>
+  <url-pattern>/todolist/fileupload</url-pattern>
+</servlet-mapping>
+
+  <servlet>
+    <servlet-name>appServiceImpl</servlet-name>
+    <servlet-class>org.gwtproject.tutorial.server.main.AppServiceImpl</servlet-class>
+	</servlet>
+
+<servlet-mapping>
+  <servlet-name>appServiceImpl</servlet-name>
+  <url-pattern>/todolist/appService</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>fileUploadServlet</servlet-name>
+        <servlet-class>org.gwtproject.tutorial.server.utils.UploadServletImpl
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>fileUploadServlet</servlet-name>
+        <url-pattern>/todolist/fileupload2</url-pattern>
+    </servlet-mapping>
+
   <welcome-file-list>
     <welcome-file>TodoList.html</welcome-file>
   </welcome-file-list>
